@@ -2,7 +2,7 @@
 set_time_limit(1200);
 libxml_use_internal_errors(true);
 
-$fileName = 'example.xml';
+$fileName = 'list_of_universities.xml';
 
 define('FIRST_ROW',1);
 define('LAST_ROW',100);
