@@ -18,6 +18,7 @@ preg_match_all('/<option value="(\d+)">([а-яА-я.\s-]+)/',$dataFromFirstPage,
 $dataRegions = array_combine($rawDataRegions[1],$rawDataRegions[2]);
 
 $dom = new DOMDocument('1.0', 'UTF-8');
+$dom->formatOutput = true;
 $rootNode = $dom->appendChild(new DOMElement('root'));
 
 foreach($formOfIncorporation as $typeIncorporation) {
