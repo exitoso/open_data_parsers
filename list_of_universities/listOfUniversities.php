@@ -24,7 +24,7 @@ $rootNode = $dom->appendChild(new DOMElement('root'));
 foreach($formOfIncorporation as $typeIncorporation) {
 
     $incorporation = new DOMElement($typeIncorporation);
-    $rootNode = $rootNode->appendChild($incorporation);
+    $rootNode->appendChild($incorporation);
 
     foreach($dataRegions as $key=>$value) {
 
